@@ -20,18 +20,19 @@
 <body>
 
 <div>
+<form name="form" action="">
 	<span>
-		username <input type="text" name="username">
+		username <input type="text" name="username" onchange="usrname()">
 	</span>
 	<span>
-		name <input type="text" name="name">
+		name <input type="text" name="name" onchange="nme()">
 	</span>
 	<span>
-		age <input type="number" name="age">
+		age <input type="text" name="age" size="3" maxlength="3" onchange="ag()">
 		gender <input type="radio" name="male"> <input type="radio" name="female">
 	</span>
 	<span>
-		phone number <input type="text" name="phno">
+		phone number <input type="text" name="phno" onchange="phNo()">
 	</span>
 	<span>
 		email <input type="text" name="email">
@@ -45,6 +46,9 @@
 	<span>
 		<a href="comprofile.html" target="blank"><button>SUBMIT</button></a>
 	</span>
+	<p id="inform"></p>
+</form>
 </div>
+<script type="text/javascript" src="profile.js"></script>
 </body>
 </html>
