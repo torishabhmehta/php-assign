@@ -8,19 +8,19 @@
 			text-align: center;
 			flex-direction: column;
 			justify-content: center;
-			
+
 			align-content: center;}
 		span
 		{
 			display: inline-block;
-			padding: 5px;}	
-		
+			padding: 5px;}
+
 	</style>
 </head>
 <body>
 
 <div>
-<form name="form" action=" http://192.168.121.187:8001/rishabh/index.php">
+<form name="form" action="../index.php" method = "post">
 	<span>
 		username <input type="text" name="username" onchange="usrname()">
 	</span>
@@ -50,6 +50,7 @@
 	<p id="inform"></p>
 </form>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="profile.js"></script>
 </body>
 </html>
