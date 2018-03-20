@@ -7,7 +7,7 @@ ini_set('display_errors', 'On');
 <!DOCTYPE html>
 <html>
 <head>
-  <title>complete-profile</title>
+  <title>profile</title>
  <link rel="stylesheet" type="text/css" href="profile.css">
 </head>
 
@@ -21,16 +21,21 @@ ini_set('display_errors', 'On');
     </div>
   </div>   
   <div id="inform">
-    <p><span>name</span><span><?php echo $_SESSION["name"]; ?></span></p>      
-    <p><span>number</span<span><?php echo $_SESSION["phno"]; ?></span> </p>    
-    <p><span>email</span><span><?php echo $_SESSION["email"]; ?></span></p>
+  <?php
+   echo " <p>Name: ".$_SESSION["name"]."</p>";
+  echo  "<p>Number: ".$_SESSION["phno"]."</p>";
+  echo "<p>email: ".$_SESSION["email"]."</p>";?>
   </div>
-  <div>
-    <button id='a' onclick="feed();">Go To Feed Page</button>
-  </div>
+ <div id="ab"> 
+    <button onclick="feed();">Go To Feed Page</button>
+    <button>change details</button>
+    <button onclick="logout();">logout</button>
+   </div> 
   <script type="text/javascript">
     function feed()
     {window.location="feed.php";}
+    function logout(){
+      window.location="logout.php";}
   </script>
 </body>
 </html>

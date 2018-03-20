@@ -24,7 +24,8 @@ if ($conn->connect_error) {
         <title>common feed</title>
         <style>
         p{
-        background-color:cyan;}
+        background-color:cyan;
+display:block;}
         body{
         background-color:magenta;}
         </style>
