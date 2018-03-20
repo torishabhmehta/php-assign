@@ -3,6 +3,10 @@
 <head>
 	<title>Sign-in</title>
 	<style type="text/css">
+    body{
+    background-color:coral;}
+    fieldset{
+    background-color: cyan;}
 		span
 		{padding: 5px;
 			}
@@ -17,22 +21,32 @@
 </head>
 <body>
 <div>
+
 <form name='form' action="../valid.php" method="post">
+<fieldset><legend>
+Log-In</legend>
+<legend>
 	<span>
 		username <input type="text" name="username">
 	</span>
+  </legend><legend>
 	<span>
 		password <input type="password" name="passwd">
 	</span>
+  </legend><legend>
   <p class="remember_me">
         <label>
 
                 <input type="checkbox" name="remember_me" id="remember_me">
                         Remember me 
                               </label>
+                              </legend><legend>
 	<span>
+
 	<input type="submit">
 	</span>
+  </legend>
+  </fieldset>
   </form>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
