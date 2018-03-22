@@ -7,7 +7,7 @@ $db_host="192.168.121.187";
 $db_username="first_year";
 $db_passwd="first_year";
 $db_name="first_year_db";
-
+$username=$_SESSION['username'];
 //mysqli connection
 $conn = new mysqli($db_host, $db_username, $db_passwd,$db_name);
 
@@ -56,18 +56,18 @@ background-color: pink;}
   <form action='../update.php' method='post' enctype='multipart/form-data' >
    <fieldset>
      <legend>Update profile</legend>
-      Select Profile picture: <input type='file' id='pp' name='pp'  ?>"><br>
+      Select Profile picture: <input type='file' id='pp' name='pp' ><br>
       Select Cover picture: <input type='file' id='cp' name='cp' ><br>
-      Educational Institute: <input type='text' name='ei' value="<?php echo $_SESSION["pp"]; ?>"  required=''><br>
-      Working as: <input type='text' name='work'value="<?php echo $_SESSION["pp"]; ?>"  required=''><br>
-      Name: <input type='text' name='name' value="<?php echo $_SESSION["pp"]; ?>"  required=''><br>
-      Email:<input type='text' name='email' value="<?php echo $_SESSION["pp"]; ?>"  required=''><br>
-      age: <input type='text' name='age' value="<?php echo $_SESSION["pp"]; ?>"  required=''><br>
+      Educational Institute: <input type='text' name='ei' value="<?php echo $_SESSION["ei"]; ?>"  required=''><br>
+      Working as: <input type='text' name='work'value="<?php echo $_SESSION["work"]; ?>"  required=''><br>
+      Name: <input type='text' name='name' value="<?php echo $_SESSION["name"]; ?>"  required=''><br>
+      Email:<input type='text' name='email' value="<?php echo $_SESSION["email"]; ?>"  required=''><br>
+      age: <input type='text' name='age' value="<?php echo $_SESSION["age"]; ?>"  required=''><br>
       ph no: <input type='text' name='phno' value="<?php echo $_SESSION["phno"]; ?>"  required=''><br>
               <input type='submit' name='update profile'>
                </fieldset>
                </form>
-
+<a href="chpass.html"><button>Change password</button><a>
                </body>
                </html>
 

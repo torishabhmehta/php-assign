@@ -24,7 +24,10 @@ ini_set('display_errors', 'On');
   <?php
    echo " <p>Name: ".$_SESSION["name"]."</p>";
   echo  "<p>Number: ".$_SESSION["phno"]."</p>";
-  echo "<p>email: ".$_SESSION["email"]."</p>";?>
+  echo "<p>email: ".$_SESSION["email"]."</p>";
+  echo "<p>age: ".$_SESSION["age"]."</p>";
+  echo "<p>Educational institute: ".$_SESSION["ei"]."</p>";
+  echo "<p>work: ".$_SESSION["work"]."</p>";?>
   </div>
  <div id="ab"> 
     <button onclick="feed();">Go To Feed Page</button>

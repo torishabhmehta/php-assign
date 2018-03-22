@@ -36,6 +36,7 @@ display:block;}
 <textarea name='text'></textarea>
 <input type="submit" name="submit">
 </form>
+<a href="profile.php"><button>Go to profile</button></a>
 
 <?php
 
@@ -53,7 +54,7 @@ if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
 }
 
-$sql1 = "SELECT * FROM rishabh_feed;";
+$sql1 = "SELECT * FROM rishabh_feed order by time desc;";
 $result = $conn->query($sql1);
 if ($result->num_rows > 0) {
 

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Change password</title>
+</head>
+<body>
+<form name="form" action="chpass.php" method="post" onsubmit="return sub()">
+<fieldset>
+<legend>Change profile</legend>
+Initial password <input type="password" name="ipass" ><br>
+New password <input type="password" name="npass" ><br>
+Confirm password <input type="password" name="cpass" ><br>
+<input type="submit" name="submit">
+<p id="inform"></p>
+</fieldset>
+</form>
+<script>
+function sub()
+{var ipass = document.forms["form"]["ipass"].value;
+var cpas = document.forms["form"]["cpass"].value;
+var npass = document.forms["form"]["npass"].value;
+var oK=0;
+if (npass.length<6)
+{document.getElementById('inform').innerHTML="password of inappropriate length";
+ oK=1;}
+ else
+{document.getElementById('inform').innerHTML="";
+  oK=0;}}
+
+if (cpass!=npass)
+{document.getElementById('inform').innerHTML="passwords don't match";
+ oK=1;}
+  else
+{document.getElementById('inform').innerHTML="";
+  oK=0;}}
+if (OK==0){
+   return true;}
+
+else{
+document.getElementById('inform').innerHTML="some problem in form inputs";
+return false;
+}
+}
+<body>
+

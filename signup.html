@@ -28,36 +28,36 @@
 <fieldset>
 Sign- Up
 
-<form name="form" action="../index.php" method = "post">
+<form name="form" id="form" action="../index.php" method = "post" onsubmit="return sub();" >
 <legend>
   <span>
-    username <input type="text" name="username" onchange="usrname()" required="">
+    username <input type="text" name="username"onfocus="usrname()" onkeyup="usrname()" required="">
   </span>
 </legend>
 <legend>
   <span>
-    name <input type="text" name="name" onchange="nme()" required="">
+    name <input type="text" name="name" onkeyup="nme()" onfocus="nme()"required="">
   </span>
 </legend><legend>
   <span>
-    age <input type="text" name="age" size="3" maxlength="3" onchange="ag()" required="">
-    gender <input type="radio" name="male"> <input type="radio" name="female">
+    age <input type="text" name="age" size="3" maxlength="3" onfocus="ag()"  onkeyup="ag()" required="">
+    gender <input type="radio" name="male" value='M' checked="checked" >M <input type="radio" name="male" value='F'>F
   </span>
 </legend><legend>
   <span>
-    phone number <input type="text" name="phno" onchange="phNo()" required="" >
+    phone number <input type="text" name="phno" onkeyup="phNo()" onfocus="phNo()"  required="" >
   </span>
 </legend><legend>
   <span>
-    email <input type="text" name="email" required="">
+    email <input type="text" name="email"onfocus="em()"  onkeyup="em()" required="">
   </span>
 </legend><legend>
   <span>
-    password <input type="password" name="passwd" required="">
+    password <input type="password" name="passwd"onfocus="pass()"  onkeyup="pass()" required="">
   </span>
 </legend><legend>
   <span>
-    confirm password <input type="password" name="cpasswd" required="">
+    confirm password <input type="password" name="cpasswd"onfocus="cpass()"   onkeyup="cpass()" required="">
   </span>
 </legend>
   <input type="submit" name="submit">
