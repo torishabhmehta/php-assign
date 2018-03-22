@@ -28,7 +28,7 @@ ini_set('display_errors', 'On');
   </div>
  <div id="ab"> 
     <button onclick="feed();">Go To Feed Page</button>
-    <button>change details</button>
+    <button onclick="change();">change details</button>
     <button onclick="logout();">logout</button>
    </div> 
   <script type="text/javascript">
@@ -36,6 +36,8 @@ ini_set('display_errors', 'On');
     {window.location="feed.php";}
     function logout(){
       window.location="logout.php";}
+    function change(){
+    window.location="chprofile.php";}
   </script>
 </body>
 </html>
